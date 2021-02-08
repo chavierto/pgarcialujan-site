@@ -1,0 +1,19 @@
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.navBar {
+	display: flex;
+	flex-direction: row;
+}
+.navLinks {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	padding: 0px 10px;
+}
