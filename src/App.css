@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond&display=swap');
+
+body {
+	align-items: center;
+	justify-content: center;
+	font-family: 'Cormorant Garamond';
+	margin: 0 3rem;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+}
