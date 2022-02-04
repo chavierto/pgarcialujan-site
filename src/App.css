@@ -13,8 +13,23 @@ nav {
 	display: flex;
 	list-style-type: none;
 }
-app-header {
+header {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
+}
+
+h1 {
+	padding: 0 0.25rem;
+}
+.navBtn {
+	font-family: 'Courier New', Courier, monospace;
+	margin: 0 0.5rem 0 0;
+	padding: 0 0.5rem;
+}
+
+.navBtn:hover {
+	background-color: gray;
+	color: white;
+	cursor: pointer;
 }

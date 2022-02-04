@@ -1,6 +1,8 @@
 import './App.css';
 
 function App() {
+	
+	const = 
 	return (
 		<div className='App'>
 			<header className='App-header'>
@@ -9,19 +11,19 @@ function App() {
 					{/* Nav will handle navigation by hiding the sections through className */}
 
 					<li>
-						<button>About</button>
+						<div className='navBtn'>About</div>
 					</li>
 					<li>
-						<button>Work</button>
+						<div className='navBtn'>Work</div>
 					</li>
 					<li>
-						<button>Writing</button>
+						<div className='navBtn'>Writing</div>
 					</li>
 					<li>
-						<button>Newsletter</button>
+						<div className='navBtn'>Newsletter</div>
 					</li>
 					<li>
-						<button>Contact</button>
+						<div className='navBtn'>Contact</div>
 					</li>
 				</nav>
 			</header>
