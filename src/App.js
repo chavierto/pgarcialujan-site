@@ -5,13 +5,25 @@ function App() {
 		<div className='App'>
 			<header className='App-header'>
 				<h1>Patricia García Luján</h1>
-				{/* Nav will handle navigation by hiding the sections through className */}
-				{/* <nav>
-					Navigation
-					<li>test1</li>
-					<li>test2</li>
-					<li>test3</li>
-				</nav> */}
+				<nav>
+					{/* Nav will handle navigation by hiding the sections through className */}
+
+					<li>
+						<button>About</button>
+					</li>
+					<li>
+						<button>Work</button>
+					</li>
+					<li>
+						<button>Writing</button>
+					</li>
+					<li>
+						<button>Newsletter</button>
+					</li>
+					<li>
+						<button>Contact</button>
+					</li>
+				</nav>
 			</header>
 			<div className='body'>
 				<div className='about'>

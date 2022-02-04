@@ -9,6 +9,10 @@ body {
 	/* flex-direction: row; */
 }
 
+nav {
+	display: flex;
+	list-style-type: none;
+}
 app-header {
 	display: flex;
 	flex-direction: row;
