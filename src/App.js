@@ -1,8 +1,41 @@
 import './App.css';
 
 function App() {
-	
-	const = 
+	let active = 'about';
+
+	// query selector for all buttons and panels
+	const navBtns = document.querySelectorAll('.navBtn');
+	const panels = document.getElementsByClassName('.panel');
+	console.log(panels);
+	// console.log(activePanel);
+
+	// add event listener to btns
+	navBtns.forEach((btn) => {
+		btn.addEventListener('click', (e) => {
+			//run removeActiveClasses
+			removeActiveClasses();
+			btn.classList.add('active');
+			active = btn.innerText.toLowerCase();
+			// showHide();
+
+			console.log(active);
+		});
+	});
+
+	function removeActiveClasses() {
+		navBtns.forEach((btn) => {
+			btn.classList.remove('active');
+		});
+	}
+
+	function showHide(panels) {
+		panels.forEach((pnl) => {
+			pnl.classList.add('panelHide');
+		});
+		// const activePanel = document.getElementsByClassName(`${active}`);
+		// activePanel[0].classList.remove('panelHide');
+	}
+
 	return (
 		<div className='App'>
 			<header className='App-header'>
@@ -28,36 +61,35 @@ function App() {
 				</nav>
 			</header>
 			<div className='body'>
-				<div className='about'>
+				<div className='panel about'>
 					<h2>About</h2>
 					<p>Hi there, I’m a writer/editor based in Miami. </p>
+
+					<p>I have extensive experience in web-based content.</p>
 					<p>
-						<p>I have extensive experience in web-based content.</p>
-						<p>
-							I’m well versed in the delicate art of UX copywriting, speak
-							fluent SEO, and can work my way around any CMS.
-						</p>
-						<p>
-							I used to live in New York and I’m originally from Venezuela.
-							Growing up, I also lived in Spain, Italy, and Colombia.
-						</p>
-						<p>
-							I like palm trees, mango season, cooking with butter, and swimming
-							in the ocean year-round.
-						</p>
-						<p>
-							Email me if you’d like to work together:&nbsp;
-							<a
-								href='mailto:pgarcialujan@gmail.com'
-								target='_blank'
-								rel='noopener noreferrer'>
-								pgarcialujan@gmail.com
-							</a>
-							.
-						</p>
+						I’m well versed in the delicate art of UX copywriting, speak fluent
+						SEO, and can work my way around any CMS.
+					</p>
+					<p>
+						I used to live in New York and I’m originally from Venezuela.
+						Growing up, I also lived in Spain, Italy, and Colombia.
+					</p>
+					<p>
+						I like palm trees, mango season, cooking with butter, and swimming
+						in the ocean year-round.
+					</p>
+					<p>
+						Email me if you’d like to work together:&nbsp;
+						<a
+							href='mailto:pgarcialujan@gmail.com'
+							target='_blank'
+							rel='noopener noreferrer'>
+							pgarcialujan@gmail.com
+						</a>
+						.
 					</p>
 				</div>
-				<div className='work'>
+				<div className='panel panelHide work'>
 					<h2>Work</h2>
 					<p>
 						I write web copy for brands. Everything from micro to long-form. Nav
@@ -74,7 +106,7 @@ function App() {
 					</p>
 					<p>I respect a deadline and I’m always up for a challenge.</p>
 				</div>
-				<div className='writing'>
+				<div className='panel panelHide writing'>
 					<h2>Writing</h2>
 					<p>
 						In 2020, I was accepted as a James Michener fellow at the University
@@ -120,7 +152,7 @@ function App() {
 						</a>
 					</li>
 				</div>
-				<div className='newsletter'>
+				<div className='panel panelHide newsletter'>
 					<h2>Newsletter</h2>
 					<p>
 						For a while I wrote a weekly newsletter called Sobremesa—say it with
@@ -158,7 +190,7 @@ function App() {
 						</a>
 					</li>
 				</div>
-				<div className='contact'>
+				<div className='panel panelHide contact'>
 					<h2>Contact</h2>
 					<p>
 						<a
